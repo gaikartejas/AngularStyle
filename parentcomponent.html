@@ -1,0 +1,15 @@
+<div [ngStyle]="style1"><h1 style="font-family: 'Times New Roman', Times, serif;font-weight:bold;color:black;">REGISTRATION PAGE</h1>
+    <table>
+   
+        <tr><td><Label>NAME</Label></td>
+        <td><input [(ngModel)]="username"  placeholder="ENTER TEXT" /></td></tr>
+        <tr><td><Label>PASSWORD</Label></td>
+        <td><input type="password" [(ngModel)]="password" placeholder="PASSWORD"/></td></tr>
+        <tr><td><input style="background-color:cornsilk;margin-left: 100px;height: 40px;" type="button" value="LOGIN" (click)="OnClick()"></td></tr>
+        <child></child>
+    
+        <tr><td style="background-color:yellow;color: red;">NAME:{{username}}</td></tr><br/>
+        <tr><td style="background-color:yellow;color: red;">PASSWORD:{{password}}</td></tr><br/>
+
+    </table>
+</div>
